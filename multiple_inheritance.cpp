@@ -10,16 +10,16 @@ public:
         cout << "I`m driving" << endl;
     }
 };
-class Airplain
+class Airplane
 {
 public:
-    string airplain = "field of Airplain class";
+    string airplane = "field of Airplane class";
     void Fly()
     {
         cout << "I`m flying" << endl;
     }
 };
-class FlyingCar: public Car, public Airplain
+class FlyingCar: public Car, public Airplane
 {
 
 };
@@ -27,6 +27,6 @@ int main()
 {
     FlyingCar fc;
     Car *ptrC = &fc;
-    Airplain *ptrA = &fc;
+    Airplane *ptrA = &fc;
     return 0;
 }
